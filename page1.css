@@ -537,3 +537,9 @@ display: none;
 .light-1 ,.light-2{
   color: #00C3E2;
 }
+
+.navbar-toggler-phone{
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
