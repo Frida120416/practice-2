@@ -1,0 +1,539 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  header {
+    background-color: #f8f9fa;
+  }
+
+  .background{
+    background-image: url(image/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;  
+
+  }
+  
+  .navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+/* 在電腦端隱藏個人設定 */
+@media (min-width: 982px) {
+    /* 將其他 .nav-item.dropdown 元素隱藏 */
+    .nav-item.dropdown:not(:last-child) {
+      display: none !important;
+    }
+
+    .navbar-toggler-phone {
+      display: none !important;
+    }
+
+    .collapse-1.navbar-collapse-1{
+      display: none !important;
+    }
+  }
+
+
+
+/* 在手機及平板端隱藏日夜切換 */
+
+@media (max-width: 991px) {
+    .form-check.form-switch {
+      display: none;
+    }
+  }
+
+ 
+  /* Tab CSS */
+
+  .container-fluid-1{
+    padding-bottom: 50px;
+
+  }
+  
+  .btn-group {
+    border-radius: 50px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset #c9c9c9 0px 0px 10px -1px; 
+  }
+  
+
+  .nav-pills .nav-link {
+    border-radius: 30px;
+    font-size: 20px;
+     
+  }
+   /* Tab手機板 */
+@media (max-width: 576px) {
+  .nav-pills .nav-link {
+    border-radius: 30px;
+    font-size: 15px;
+     
+  }
+}
+
+
+  .nav-pills .nav-link.active {
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .nav-link{
+    color:  #313D4F ;
+    
+  }
+
+
+
+  .nav-item  {
+    padding: 10px;
+  }
+  
+
+ /* 在手機及平板端導覽列比較短 */
+
+@media (max-width: 991px) {
+  .nav-item  {
+    padding: 0px;
+  }
+  
+}
+  
+.nav-item a {
+  font-size: 18px;
+  color:  #313D4F ;
+}
+
+
+
+  
+  .nav-link.active {
+    font-weight: bold;
+    color:#00C3E2 !important
+  }
+  
+
+
+  #chart {
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-body p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Night mode styles */
+  body.night-mode {
+    background-color: #313D4F ;
+    color: #ffffff;
+  }
+  
+  body.night-mode header,
+  body.night-mode nav,
+  body.night-mode footer,
+  body.night-mode .bg-light {
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+  body.night-mode .nav-link {
+    color: #ffffff !important;
+  }
+  
+  body.night-mode .card {
+    background-color: #444;
+    color: #ffffff;
+  }
+  
+  body.night-mode .btn-outline-secondary {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  body.night-mode .btn-outline-secondary:hover {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  .logo{
+    width: 15rem;
+    padding: 15px;
+  }
+
+  .person{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+   
+   
+    
+}
+
+
+
+.navbar, .navbar-expand-lg {
+  background-color: transparent !important;
+}
+
+.navbar2{
+  background: linear-gradient(to right, #F5F6DE, #A8DDE6);
+  display: flex;
+  justify-content: center;
+  padding-top:10px ;
+  padding-bottom:10px ;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+.form-switch{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.form-check-label{
+  font-size: 18px;
+  color: #313D4F;
+  font-weight: 600;
+}
+
+ /* footer樣式 */
+
+
+
+
+.items{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.nav-link{
+  color: #5a5a5a;
+  font-weight: 800;
+}
+
+
+
+.nav-link:hover{
+  color: #00C3E2 !important; 
+  font-weight: 800;
+
+}
+
+.logo2{
+  width: 15rem;
+  padding: 15px;
+}
+
+ /* 第二行navbar不要有漢堡跟nav */
+ @media (max-width: 991px) {
+  .navbar-toggler, .navbar2 {
+    display: none;
+  }
+}
+
+
+.title{
+  font-size: 32px;
+  font-weight: 600;
+  color: #313D4F;
+ 
+}
+
+.text-center{
+  padding-top:50px ;
+}
+
+/* 對於手機和平板視圖 */
+@media (max-width: 769px) {
+  .col-md-2  {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 輕微的陰影效果 */
+  
+  }
+}
+
+
+
+
+
+
+.top-bar{
+  background-color: #00C3E2;
+  padding: 30px;
+  border-radius:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+ 
+} 
+
+
+.container-2{
+  background-color: #ffffff;
+  padding: 0px 0px 30px 0px;;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 輕微的陰影效果 */
+  border-radius:20px ;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto; 
+  margin-bottom: 50px;
+ 
+}
+
+/* 電腦版卡片尺寸 */
+@media (min-width: 769px) {
+  .container-2{
+    background-color: #ffffff;
+    padding: 0px 0px 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 輕微的陰影效果 */
+    border-radius:20px ; 
+    width: 80%;
+    height: 80%;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+    
+  }
+}
+.title-2 {
+  width: 100%; /* 讓標題滿版 */
+  background: linear-gradient(90deg, #00C3E2, #83E1FA);
+  text-align: center; /* 讓文字置中 */
+  padding-top: 30px; /* 加上上下的間距 */
+  padding-bottom: 30px; /* 加上上下的間距 */
+  border-radius:20px 20px 0px 00px ; 
+}
+
+.title-2 h1, .title-2 h2 {
+  color: #FFFFFF;
+  
+}
+.title-2 h1{
+  font-weight: 600;
+}
+
+
+
+.circle{
+  width:15rem ;
+  padding: 0;
+}
+
+
+
+
+/* 列表點點 */
+.list-group-item::before {
+  content: ""; /* 必須的，但不需要實際的內容 */
+  position: absolute; /* 讓我們可以自由地定位這個元素 */
+  left: 0; /* 將圓點放在文字的左邊 */
+  top: 50%; /* 將圓點垂直置中 */
+  transform: translateY(-50%); /* 這是為了完全置中圓點 */
+  width: 10px; /* 圓點的寬度 */
+  height: 10px; /* 圓點的高度 */
+  border-radius: 50%; /* 讓圓點變成圓形 */
+  background-color: #00C3E2; /* 圓點的顏色 */
+
+
+}
+
+.list-group-item{
+  font-size: 18px;
+  font-weight: 600;
+  color: #313D4F;
+  display: flex; /* 讓內部的元素可以使用 flexbox 的特性 */
+  justify-content: space-between; /* 讓內部的元素分別置於左右兩側 */
+}
+
+.list-group-item:nth-child(1)::before {
+  background-color: #00C3E2; /* 第一個項目的圓點顏色 */
+  
+}
+
+.list-group-item:nth-child(2)::before {
+  background-color: #E7D634; /* 第二個項目的圓點顏色 */
+}
+
+.list-group-item:nth-child(3)::before {
+  background-color: #00B69B; /* 第三個項目的圓點顏色 */
+}
+
+.list-group-item:nth-child(4)::before {
+  background-color:#9E65EB; /* 第四個項目的圓點顏色 */
+}
+
+.list-group-item:nth-child(5)::before {
+  background-color: #EB6C66; /* 第五個項目的圓點顏色 */
+}
+
+.savings{
+  color: #313D4F !important; /* 這將設定文字為藍色 */
+  font-size: 20px;
+  font-weight: 700;
+  display: inline;
+}
+
+.account-number{
+  color: #00C3E2 !important; /* 這將設定文字為藍色 */
+  font-size: 20px;
+  font-weight: 700;
+  display: inline;
+}
+
+
+.btn-1,.btn-2{
+  text-decoration:none ;
+  border: none;
+  background: linear-gradient(90deg, rgba(39,49,66,1) 9%, rgba(30,144,166,1) 88%);
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 30px 10px 30px;
+  
+}
+
+.btn-1{
+  margin-top: 20px;
+}
+
+.btn-1:hover, .btn-2:hover {
+  background: linear-gradient(90deg, rgba(30,144,166,1) 9%, rgba(39,49,66,1) 88%); /* 改變背景色 */
+  color: #ffffff; /* 改變文字顏色 */
+}
+
+
+
+
+@media (min-width: 769px) {
+.solid{
+display: none;
+}
+
+}
+
+.button-group-2{
+  position: relative; /* 讓內部的絕對定位元素可以相對於這個元素定位 */
+  padding: 20px;
+}
+
+@media (max-width: 769px) {
+  .button-group-2{
+    margin-top: 30px;
+    padding: 0px;
+  }
+  
+ }
+
+
+.btn-3{
+  position: absolute; /* 讓這個元素可以被絕對定位 */
+  top: 50%; /* 將這個元素置於父元素的中間 */
+  left: 50%; /* 將這個元素置於父元素的中間 */
+  transform: translate(-50%, -50%); /* 這是為了完全置中這個元素 */
+  text-decoration:none ;
+  border: none;
+  background-color: #4a4a4aca;
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 30px 10px 30px;
+}
+
+.btn-3:hover{
+  background-color: #121212;
+ }
+
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container-fliud-footer{
+  background-color: #EFEFEF;
+}
+
+.img-fluid-1{
+  width: 18rem;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  
+}
+
+.items-footer{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.nav-link-1{
+  color: #5a5a5a;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+
+.nav-link-1:hover{
+  color: #00C3E2 !important; 
+  font-weight: 800;
+
+}
+
+.icon-1{
+  display: flex;
+  justify-content: center;
+}
+
+.text1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text1 h2{
+  color: #313D4F;
+
+}
+
+.text1 p{
+  color: #313D4F;
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+
+.light-1 ,.light-2{
+  color: #00C3E2;
+}
